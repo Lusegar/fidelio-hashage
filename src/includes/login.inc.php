@@ -15,7 +15,7 @@
             {
             session_start();
             $_SESSION['nom'] = $DATA['mail'];
-            echo "<p class=\"success\">Votre login est ".$_SESSION['nom']."Votre mot de passe est  ".md5($mdp);
+            echo "<p class=\"success\">Votre login est ".$_SESSION['nom']."Votre mot de passe est  ";
             header("Location: connection.php");
             exit;                            
             }
